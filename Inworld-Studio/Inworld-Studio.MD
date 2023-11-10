@@ -14,6 +14,6 @@ Testing Environment:
 Software Version: unknown
 
 #### List of Concerns:
-1. Synchronize voice and text in Chat
-2. Quality of Avatar in the grid view
-3. Limit the image size for Avatar
+1. [Synchronize voice and text in Chat](https://github.com/gufimtseva/Bug-reports/blob/master/Inworld-Studio/%231%20Synchronize%20voice%20and%20text%20in%20Chat/%231%20Synchronize%20voice%20and%20text%20in%20Chat.MD)
+2. [Quality of Avatar in the grid view](https://github.com/gufimtseva/Bug-reports/blob/master/Inworld-Studio/%232%20Quality%20of%20Avatar%20in%20the%20grid%20view/%232%20Quality%20of%20Avatar%20in%20the%20grid%20view.MD)
+3. [Limit the image size for Avatar](https://github.com/gufimtseva/Bug-reports/blob/master/Inworld-Studio/%233%20Limit%20the%20image%20size%20for%20Avatar/%233%20Limit%20the%20image%20size%20for%20Avatar.MD)

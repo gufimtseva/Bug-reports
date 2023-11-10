@@ -14,9 +14,7 @@
 
 The desynchronization starts from the beginning. While the character's message typing is simulated starting with the character's behavior description, the voice begins to speak the character's text at once, jumping over the character's reaction. Therefore, the character's speech runs far ahead, and the typed text in the message lags far behind.
 
-The scenario is demonstrated in the screen recording below:   
-[VIDEO](Chat_Unsynchronized_voice_and_text.mp4)
-
+The scenario is demonstrated in the screen recording: [VIDEO](Chat_Unsynchronized_voice_and_text.mp4)
 
 **Expected Behavior:** The character's voice should say the exact words as it types.
 
