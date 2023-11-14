@@ -17,6 +17,7 @@ Testing Environment:
 Software Version: unknown
 
 #### List of Issues:
-1. Incorrect sorting of skills list.
-2. Second item
-3. Third item
+1. [Sorting of the skills list](https://github.com/gufimtseva/Bug-reports/tree/master/VanHack/%231%20Sorting%20of%20the%20skills%20list)
+2. [Renumbering after dragging items](https://github.com/gufimtseva/Bug-reports/tree/master/VanHack/%232%20Renumbering%20after%20dragging%20items)
+3. [Delete items from the skills list](https://github.com/gufimtseva/Bug-reports/tree/master/VanHack/%233%20Delete%20items%20from%20the%20skills%20list)
+4. [Numbering of new items in the skills list](https://github.com/gufimtseva/Bug-reports/tree/master/VanHack/%234%20Numbering%20of%20new%20items%20in%20the%20skills%20list)
