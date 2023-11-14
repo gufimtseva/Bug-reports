@@ -6,7 +6,7 @@
 
 **Module/Feature:** Edit Character / Edit Avatar (2D Avatar Image)
 
-**Severity:** Low
+**Severity:** 4-Low
 
 ### 2.1. Description
 

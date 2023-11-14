@@ -6,7 +6,7 @@
 
 **Module/Feature:** Chat with the Character  
 
-**Severity:** High
+**Severity:** 2-High
 
 ### 1.1. Description
 
