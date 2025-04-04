@@ -13,4 +13,4 @@ Testing Environment:
 Software Version: unknown
 
 #### List of Concerns:
-1. [Accessibility Features Blocked](https://github.com/gufimtseva/Bug-reports/blob/master/Inworld-Studio/%231%20Synchronize%20voice%20and%20text%20in%20Chat/%231%20Synchronize%20voice%20and%20text%20in%20Chat.MD)
+1. [Accessibility Features Blocked](https://github.com/gufimtseva/Bug-reports/blob/master/Pickleheads/%231%20Accessibility%20Features%20Blocked/%231%20Accessibility%20Features%20Blocked.MD)

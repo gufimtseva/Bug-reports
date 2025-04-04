@@ -25,7 +25,7 @@ Furthermore, after closing this broken modal/frame, the main page content become
 9. (Optional but recommended) Open the browser's Developer Tools (usually by pressing F12) and navigate to the "Console" tab before step 5 to capture the initial CSP error when the statement/feedback link is clicked.
 
 **Expected Result:**
-The _Accessibility Statement_ content or the _Send Feedback_ form, provided by equalweb.com, should load successfully within the designated frame/modal.
+The Accessibility Statement content or the Send Feedback form, provided by equalweb.com, should load successfully within the designated frame/modal.
 
 After closing the modal/frame (whether it loaded successfully or not), the main page should remain fully interactive, allowing normal scrolling and interaction without needing a refresh.
 
@@ -41,14 +41,14 @@ After closing the modal/frame (whether it loaded successfully or not), the main 
 To regain the ability to scroll and interact fully with the page, the user must manually refresh the page (F5) or navigate away.
 
 **Root Cause Analysis:**
-<u>Initial Blocking</u>: The website (`pickleheads.com`) sends an HTTP `Content-Security-Policy` header with a `frame-src` directive that does not include `https://access.equalweb.com`. This causes the browser to block the frame content.
+_Initial Blocking:_ The website (`pickleheads.com`) sends an HTTP `Content-Security-Policy` header with a `frame-src` directive that does not include `https://access.equalweb.com`. This causes the browser to block the frame content.
 
-<u>Subsequent Freeze (Hypothesis)</u>: The script handling the modal/frame dismissal might not be correctly cleaning up event listeners, removing overlays, or restoring the page's state, potentially due to an error path triggered by the blocked content. This leaves the page in a state where scrolling or other interactions are captured or disabled.
+_Subsequent Freeze (Hypothesis):_ The script handling the modal/frame dismissal might not be correctly cleaning up event listeners, removing overlays, or restoring the page's state, potentially due to an error path triggered by the blocked content. This leaves the page in a state where scrolling or other interactions are captured or disabled.
 
 **Suggested Solution:**
-<u>Primary Fix (CSP)</u>: The web development or operations team for `pickleheads.com` needs to modify the website's Content Security Policy configuration on the server. Specifically, `https://access.equalweb.com` needs to be added as an allowed source to the `frame-src` directive.
+_Primary Fix (CSP):_ The web development or operations team for `pickleheads.com` needs to modify the website's Content Security Policy configuration on the server. Specifically, `https://access.equalweb.com` needs to be added as an allowed source to the `frame-src` directive.
 
-<u>Secondary Fix (Scripting)</u>: Investigate the TypeScript code responsible for managing the accessibility modal/frame. Ensure that the dismissal logic correctly handles scenarios where the frame content fails to load (due to CSP or other errors) and properly restores the background page's scrollability and interactivity. Error handling around the `iframe` loading might be necessary.
+_Secondary Fix (Scripting)_: Investigate the TypeScript code responsible for managing the accessibility modal/frame. Ensure that the dismissal logic correctly handles scenarios where the frame content fails to load (due to CSP or other errors) and properly restores the background page's scrollability and interactivity. Error handling around the `iframe` loading might be necessary.
 
 
 **User Impact:**
